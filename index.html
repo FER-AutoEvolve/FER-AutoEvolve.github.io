@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="AutoEvolve - Automatizirano evoluiranje softvera pomoću AI i strojnog učenja. Projekt FER-a usmjeren na AI optimizaciju softvera.">
+    <meta name="keywords"
+        content="AutoEvolve, AI, strojno učenje, automatizirano ažuriranje softvera, FER, inovacije, razvoj softvera">
+    <meta name="author" content="FER-AutoEvolve Team">
+    <meta property="og:title" content="AutoEvolve - FER">
+    <meta property="og:description"
+        content="AutoEvolve - Automatizirano evoluiranje softvera pomoću AI i strojnog učenja. Projekt FER-a usmjeren na AI optimizaciju softvera.">
+    <meta property="og:image" content="/static/images/AutoEvolve_logo.png">
+    <meta property="og:url" content="https://FER-AutoEvolve.github.io">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AutoEvolve - FER">
+    <meta name="twitter:description"
+        content="AutoEvolve - Automatizirano evoluiranje softvera pomoću AI i strojnog učenja. Projekt FER-a usmjeren na AI optimizaciju softvera.">
+    <meta name="twitter:image" content="/static/images/AutoEvolve_logo.png">
+    <title>AutoEvolve@FER</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script>
+            function switchLanguage(lang) {
+                if (lang === 'hr') {
+                    document.getElementById('content-hr').style.display = 'block';
+                    document.getElementById('content-en').style.display = 'none';
+                } else {
+                    document.getElementById('content-hr').style.display = 'none';
+                    document.getElementById('content-en').style.display = 'block';
+                }
+            }
+        </script>
+</head>
+
+<body>
+    <main class="container mt-5">
+        <div class="container mt-3 d-flex justify-content-end">
+            <button class="btn btn-primary me-2" onclick="switchLanguage('hr')">Hrvatski</button>
+            <button class="btn btn-secondary" onclick="switchLanguage('en')">English</button>
+        </div>
+
+        <div class="jumbotron">
+            <!-- <h1 class="display-2 text-center">
+                <img src="/static/images/Autoevolve_logo.svg" class="img-fluid w-50" alt="Logo" />
+            </h1> -->
+
+            <div id="content-hr">
+                <h2 class="display-5 text-center">AutoEvolve - Automatizirano evoluiranje softvera</h2>
+                <small class="text-muted">NPOO.C3.2.R3-I1.05.0073</small>
+                <hr class="my-4">
+                
+                <p>
+                    Projekt AutoEvolve usmjeren je na razvoj sustava za automatizirano evoluiranje softvera, temeljenog na AI modelima i strojnome učenju. Cilj je omogućiti samostalnu prilagodbu i optimizaciju softvera u realnom vremenu, bez potrebe za ručnim intervencijama.
+                </p>    
+                <p>Projekt se temelji na:</p>
+                <ul>
+                    <li>Praćenju korisničkih interakcija i analizi ponašanja korisnika.</li>
+                    <li>Generiranju i evoluciji kôda pomoću AI modela.</li>
+                    <li>Automatskom testiranju i validaciji.</li>
+                </ul>
+                
+                <p>
+                    Za demonstraciju funkcionalnosti, projekt koristi igru Snake. Kroz ovu igru, sustav prikuplja podatke o igračima, analizira njihov stil igranja i generira razine prilagođene pojedinom igraču.
+                    Ovaj pristup omogućuje testiranje AI modela u dinamičkom okruženju te validaciju prilagodljivosti i učinkovitosti razvijenog sustava.
+                    Očekivani doprinos projekta je razvoj inteligentnih, samoevoluirajućih softverskih sustava koji će poboljšati efikasnost, sigurnost i prilagodljivost softvera u raznim industrijama.
+
+                </p>
+
+                <div class="row">
+                    <h2 class="display-6">Projektni tim</h2>
+                    <div class="ms-4">
+                        <p><a href="https://www.fer.unizg.hr/danijel.mlinaric" target="_blank">doc. dr. sc. Danijel Mlinarić</a> - <b>voditelj</b></p>
+                        <p><a href="https://www.fer.unizg.hr/ivica.boticki" target="_blank">prof. dr. sc. Ivica Botički</a></p>
+                        <p><a href="https://www.fer.unizg.hr/juraj.doncevic" target="_blank">dr. sc. Juraj Dončević</a></p>
+                        <p><a href="https://www.fer.unizg.hr/agneza.krajna" target="_blank">Agneza Krajna, mag. ing.</a></p>
+                        <p><a href="https://www.fer.unizg.hr/filip.martinovic" target="_blank">Filip Martinović, mag. ing.</a></p>
+                    </div>
+                </div>
+            </div>
+            <div id="content-en" style="display: none;">
+                <h2 class="display-5 text-center">AutoEvolve - Automated software evolution</h2>
+                <small class="text-muted">NPOO.C3.2.R3-I1.05.0073</small>
+                <hr class="my-4">
+                
+                <p>
+                    The AutoEvolve project focuses on developing a system for automated software evolution, based on AI models and machine learning. The goal is to enable independent adaptation and optimization of software in real-time, without the need for manual interventions.
+                </p>    
+                <p>The project is based on:</p>
+                <ul>
+                    <li>Tracking user interactions and analyzing user behavior.</li>
+                    <li>Generating and evolving code using AI models.</li>
+                    <li>Automated testing and validation.</li>
+                </ul>
+
+                <p>
+                    To demonstrate functionality, the project uses the Snake game. Through this game, the system collects player data, analyzes their playing style, and generates levels tailored to each player.
+                    This approach allows for testing AI models in a dynamic environment and validating the adaptability and efficiency of the developed system.
+                    The expected contribution of the project is the development of intelligent, self-evolving software systems that will enhance the efficiency, security, and adaptability of software across various industries.
+                </p>
+
+
+                <div class="row">
+                    <h2 class="display-6">Project team</h2>
+                    <div class="ms-4">
+                        <p><a href="https://www.fer.unizg.hr/danijel.mlinaric" target="_blank">doc. dr. sc. Danijel Mlinarić</a> - <b>team leader</b></p>
+                        <p><a href="https://www.fer.unizg.hr/ivica.boticki" target="_blank">prof. dr. sc. Ivica Botički</a></p>
+                        <p><a href="https://www.fer.unizg.hr/juraj.doncevic" target="_blank">dr. sc. Juraj Dončević</a></p>
+                        <p><a href="https://www.fer.unizg.hr/agneza.krajna" target="_blank">Agneza Krajna, mag. ing.</a></p>
+                        <p><a href="https://www.fer.unizg.hr/filip.martinovic" target="_blank">Filip Martinović, mag. ing.</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col-4 col-md-2 d-flex align-items-center justify-content-center">
+                <img src="/static/images/ZPR logo-01.webp" class="img-fluid" alt="ZPR Logo" />
+            </div>
+            <div class="col-4 col-md-3 d-flex align-items-center justify-content-center">
+                <img src="/static/images/FER_logo_3.webp" class="img-fluid" alt="UNIZG-FER Logo" />
+            </div>
+            <div class="col-4 col-md-3 d-flex align-items-center justify-content-center">
+                <img src="/static/images/EU_funded.png" class="img-fluid" alt="EU funded NextGenerationEu" />
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
