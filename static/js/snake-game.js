@@ -354,7 +354,10 @@ document.addEventListener('DOMContentLoaded', () => {
         gameOver = false;
         
         if (startGameLoop) {
-            gameLoop();
+            // Load current level from dropdown
+            const selectedLevel = levelSelect.value;
+            loadLevel(selectedLevel);
+            //gameLoop();
         }
     }
     
