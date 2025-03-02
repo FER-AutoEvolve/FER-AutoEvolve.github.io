@@ -222,9 +222,22 @@ document.addEventListener('DOMContentLoaded', () => {
         const head = snake[0];
         
         // Check wall collision
-        if (head.x < 0 || head.x >= tileCount || head.y < 0 || head.y >= tileCount) {
-            gameOver = true;
-            return;
+        //if (head.x < 0 || head.x >= tileCount || head.y < 0 || head.y >= tileCount) {
+        //    gameOver = true;
+        //    return;
+        //}
+        
+        // Wrap around screen edges (teleport to opposite side) - instead of frame wall collision
+        if (head.x < 0) {
+            snake[0].x = tileCount - 1;
+        } else if (head.x >= tileCount) {
+            snake[0].x = 0;
+        }
+
+        if (head.y < 0) {
+            snake[0].y = tileCount - 1;
+         } else if (head.y >= tileCount) {
+            snake[0].y = 0;
         }
         
         // Check collision with level walls
